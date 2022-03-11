@@ -8,6 +8,6 @@ app.get('/',function (req,res){
     res.render('index.hbs')
 });
 
-app.listen(3000,function (){
+app.listen(process.env.PORT || 3000,function (){
     console.log("Server is running");
 })
